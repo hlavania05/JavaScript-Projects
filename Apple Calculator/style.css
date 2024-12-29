@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1c1c1e; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+#container {
+    background-color: #2c2c2e; /* Slightly lighter dark background for the container */
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Input Styles */
+input {
+    width: 100%;
+    padding: 20px;
+    background-color: #3a3a3c; /* Dark input background */
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    text-align: right;
+    color: #ffffff; /* White text for input */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Button Grid Styles */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #484848; /* Dark button background */
+    color: #ffffff; /* White text for buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #5c5c5e; /* Slightly lighter background on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Operator Buttons */
+.yellow-button {
+    background-color: #ff9500; /* Bright orange color for operators */
+    color: #ffffff;
+}
+
+.yellow-button:hover {
+    background-color: #e68900;
+}
+
+/* Special Button Styles */
+.gray-button {
+    background-color: #383838; /* Darker gray for special buttons */
+}
+
+.gray-button:hover {
+    background-color: #4c4c4e; /* Lighter gray on hover */
+}
+
+/* Zero Button */
+.zero {
+    grid-column: span 2;
+    background-color: #484848; /* Dark button for zero */
+}
+
+/* Button Sizes */
+button {
+    font-size: 1.6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        width: 280px;
+    }
+
+    input {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+}
